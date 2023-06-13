@@ -1,0 +1,13 @@
+# setting redirect default website
+DirectoryIndex index.php index.html
+
+# cegah orang akses file/folder index website
+# Options -Indexes
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f					
+# RewriteRule ^([^\.]+)$ $1.php [NC,L]				
+
+# <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+	# Header set Cache-Control "max-age=86400, public"
+# </Filesmatch>
